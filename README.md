@@ -4,34 +4,7 @@ This repository contains CLI-based implementations of cybersecurity tools develo
 
 ---
 
-## 🔍 1. Web Application Vulnerability Scanner (CLI)
-
-### 📌 Description
-A Python-based tool to scan target websites for common vulnerabilities like:
-- SQL Injection (SQLi)
-- Cross-Site Scripting (XSS)
-
-### ⚙️ Technologies Used
-- Python
-- BeautifulSoup
-- `requests`
-- `re` module
-
-### 💡 Features
-- Crawls internal links on a target domain
-- Submits malicious payloads via forms and URL params
-- Detects potential vulnerabilities using basic pattern matching
-
-### ▶️ How to Run
-```bash
-python3 web_vuln_scanner_cli.py http://testphp.vulnweb.com
-```
-
-> Note: The tool defaults to `http://testphp.vulnweb.com` if no URL is passed.
-
----
-
-## 📡 2. Network Packet Sniffer with Anomaly Detection
+## 📡 1. Network Packet Sniffer with Anomaly Detection
 
 ### 📌 Description
 A real-time packet sniffer that logs traffic details and flags potential anomalies (like flooding or port scans).
@@ -58,9 +31,7 @@ sudo python3 network_packet_sniffer.py wlan0
 ## 📁 Repository Structure
 ```
 .
-├── web_vuln_scanner_cli.py        # Web app vuln scanner (CLI)
 ├── network_packet_sniffer.py      # Packet sniffer with logging
-├── packet_logs.db                 # SQLite DB (created automatically)
 ├── README.md                      # Project descriptions and instructions
 ```
 
