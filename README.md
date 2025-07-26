@@ -31,9 +31,37 @@ sudo python3 network_packet_sniffer.py wlan0
 ## 📁 Repository Structure
 ```
 .
+├── WebVuln.py                     # Website Vulnerability Analysis
 ├── network_packet_sniffer.py      # Packet sniffer with logging
 ├── README.md                      # Project descriptions and instructions
 ```
+
+---
+
+## 🔍 2. Web Application Vulnerability Scanner (CLI)
+
+### 📌 Description
+A Python-based tool to scan target websites for common vulnerabilities like:
+- SQL Injection (SQLi)
+- Cross-Site Scripting (XSS)
+
+### ⚙️ Technologies Used
+- Python
+- BeautifulSoup
+- `requests`
+- `re` module
+
+### 💡 Features
+- Crawls internal links on a target domain
+- Submits malicious payloads via forms and URL params
+- Detects potential vulnerabilities using basic pattern matching
+
+### ▶️ How to Run
+```bash
+python3 web_vuln_scanner_cli.py http://testphp.vulnweb.com
+```
+
+> Note: The tool defaults to `http://testphp.vulnweb.com` if no URL is passed.
 
 ---
 
